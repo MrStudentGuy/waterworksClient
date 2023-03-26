@@ -1,0 +1,15 @@
+.opMode {
+    padding: 1em;
+    border-radius: 15px;
+    border: 1px solid #2c2c2c;
+    width: 20em;
+    filter: drop-shadow(5px 7px 25px #000);
+}
+
+.ipInput {
+    background-color: white;
+    color: #1c1c1c;
+    border-radius: 15px;
+    margin-top: 1em;
+    padding: 1em;
+}

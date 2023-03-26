@@ -1,0 +1,15 @@
+.latlonglocEl {
+    padding: 1em;
+    border-radius: 15px;
+    border: 1px solid #2c2c2c;
+    width: 20em;
+    filter: drop-shadow(5px 7px 25px #000);
+}
+
+.latlonglocEl .infoEl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    color: red;
+}

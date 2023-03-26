@@ -1,0 +1,78 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist",
+    "withGlobalTauri": false
+  },
+  "package": {
+    "productName": "Waterworks",
+    "version": "0.0.1"
+  },
+  "tauri": {
+    "systemTray": {
+      "iconPath": "icons/128x128@2x.png"
+    },
+    "allowlist": {
+      "all": false,
+      "fs": {
+        "all": false,
+        "readFile": true,
+        "writeFile": true,
+        "exists": true
+      },
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "notification": {
+        "all": true
+      },
+      "dialog": {
+        "all": true,
+        "open": true,
+        "save": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico",
+        "icons/icon.png",
+        "icons/Square30x30Logo.png",
+        "icons/Square44x44Logo.png",
+        "icons/Square71x71Logo.png",
+        "icons/Square89x89Logo.png",
+        "icons/Square107x107Logo.png",
+        "icons/Square142x142Logo.png",
+        "icons/Square150x150Logo.png",
+        "icons/Square284x284Logo.png",
+        "icons/Square310x310Logo.png",
+        "icons/StoreLogo.png",
+        "icons/waterworksicon.png"
+      ],
+      "identifier": "com.rogueware.waterworks",
+      "targets": "all"
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "Waterworks",
+        "width": 1600,
+        "height": 900
+      }
+    ]
+  }
+}
